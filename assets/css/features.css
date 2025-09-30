@@ -1,0 +1,117 @@
+.features {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.features-post {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.features-post:hover {
+    transform: translateY(-5px);
+}
+
+.features-post.second-features {
+    background: linear-gradient(135deg, #1f2442 0%, #2a3158 100%);
+}
+
+.features-post.third-features {
+    background: #f5a425;
+}
+
+.features-content {
+    position: relative;
+    z-index: 2;
+}
+
+.content-show {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content-show h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2442;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.second-features .content-show h4,
+.third-features .content-show h4 {
+    color: #fff;
+}
+
+.content-show i {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(245, 164, 37, 0.1);
+    color: #f5a425;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.second-features .content-show i {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.third-features .content-show i {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.content-hide {
+    display: none;
+    padding: 20px 0 0;
+}
+
+.content-hide p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.second-features .content-hide p,
+.third-features .content-hide p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.features-post:hover .content-hide {
+    display: block;
+}
+
+.scroll-to-section a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #f5a425;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.second-features .scroll-to-section a,
+.third-features .scroll-to-section a {
+    background: #fff;
+    color: #1f2442;
+}
+
+.scroll-to-section a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

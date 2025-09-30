@@ -1,0 +1,52 @@
+/* Navigation Animation Styles */
+.main-menu li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f5a425;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main-menu li:hover a::before,
+.main-menu li.active a::before {
+    transform: scaleX(1);
+}
+
+.main-menu li a {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.main-menu li:hover a,
+.main-menu li.active a {
+    opacity: 1;
+}
+
+/* Submenu animation */
+.main-menu li .sub-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.main-menu li:hover .sub-menu {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

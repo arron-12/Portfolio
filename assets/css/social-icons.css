@@ -1,0 +1,47 @@
+.video-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-item figure {
+    position: relative;
+    display: block;
+}
+
+.fb-link {
+    position: relative;
+    display: block;
+}
+
+.fb-link::after {
+    content: '\f09a';  /* Facebook icon */
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.fb-link:hover::after {
+    background: #4267B2;
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 20px rgba(66, 103, 178, 0.4);
+}
+
+.video-caption h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
